@@ -1,10 +1,10 @@
-// @ts-check
-
-/**
- * @type {import('next').NextConfig}
- **/
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/gh-pages-test",
+  reactStrictMode: true,
+  images: {
+    loader: "akamai",
+    path: "",
+  },
 };
 
 module.exports = nextConfig;
