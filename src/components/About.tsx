@@ -12,7 +12,7 @@ const About = () => {
       </h1>
       {/* <hr className="w-24 border-2 bg-red-700" /> */}
       <div className="px-4">
-        <div className="flex flex-col-reverse sm:flex-row w-full items-center px-8 xl:px-16">
+        <div className="flex flex-col-reverse sm:flex-row w-full items-center px-8 xl:px-16 2xl:px-24">
           <div className="sm:w-1/2">
             <Image src={preview} alt="girl with computer" />
           </div>
@@ -35,7 +35,45 @@ const About = () => {
         </div>
         <div className="mt-20 xl:mt-44 h-full w-full md:max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
           <div className="relative w-full">
-            <div className="border border-navyblue border-t-0 shadow-xl  pt-20">
+            <div className=" md:absolute w-full -top-12 left-0 right-0 flex flex-col md:flex-row items-center justify-between gap-4   md:bg-navyblue bg-opacity-50 md:px-8 py-4 rounded-full">
+              <motion.button
+                onClick={() => setSelectedTab(1)}
+                className={
+                  selectedTab === 1
+                    ? "w-full justify-center py-6 border bg-red-500  hover:bg-red-500 md:shadow-2xl shadow-slate-500  md:px-4 xl:px-12 rounded-3xl border-navyblue text-white text-base font-semibold tracking-wide  flex items-center gap-4 md:py-2"
+                    : "w-full justify-center py-6 border  hover:bg-red-500 md:shadow-2xl shadow-slate-500  md:px-4 xl:px-12 rounded-3xl border-navyblue text-white text-base font-semibold tracking-wide  flex items-center gap-4 md:py-2"
+                }
+              >
+                <h1>Biography</h1>
+                <hr className="w-8 border"></hr>
+                <label>01</label>
+              </motion.button>
+              <button
+                onClick={() => setSelectedTab(2)}
+                className={
+                  selectedTab === 2
+                    ? "w-full justify-center py-6 border bg-red-500  hover:bg-red-500 md:shadow-2xl shadow-slate-500  md:px-4 xl:px-12 rounded-3xl border-navyblue text-white text-base font-semibold tracking-wide  flex items-center gap-4 md:py-2"
+                    : "w-full justify-center py-6 border  hover:bg-red-500 md:shadow-2xl shadow-slate-500  md:px-4 xl:px-12 rounded-3xl border-navyblue text-white text-base font-semibold tracking-wide  flex items-center gap-4 md:py-2"
+                }
+              >
+                <h1>Skills</h1>
+                <hr className="w-8 border"></hr>
+                <label>02</label>
+              </button>
+              <button
+                onClick={() => setSelectedTab(3)}
+                className={
+                  selectedTab === 3
+                    ? "w-full justify-center py-6 border bg-red-500  hover:bg-red-500 md:shadow-2xl shadow-slate-500  md:px-4 xl:px-12 rounded-3xl border-navyblue text-white text-base font-semibold tracking-wide  flex items-center gap-4 md:py-2"
+                    : "w-full justify-center py-6 border  hover:bg-red-500 md:shadow-2xl shadow-slate-500  md:px-4 xl:px-12 rounded-3xl border-navyblue text-white text-base font-semibold tracking-wide  flex items-center gap-4 md:py-2"
+                }
+              >
+                <h1>Education</h1>
+                <hr className="w-8 border"></hr>
+                <label>03</label>
+              </button>
+            </div>
+            <div className="border border-navyblue md:border-t-0 shadow-xl  pt-20">
               <div>
                 {selectedTab === 1 ? (
                   <AnimatePresence onExitComplete={() => {}}>
@@ -188,44 +226,6 @@ const About = () => {
                   me to build dynamic and scalable web applications.
                 </p> */}
               </div>
-            </div>
-            <div className="absolute w-full -top-12 left-0 right-0 flex flex-row items-center justify-between gap-4   bg-navyblue bg-opacity-50 px-8 py-4 rounded-full">
-              <motion.button
-                onClick={() => setSelectedTab(1)}
-                className={
-                  selectedTab === 1
-                    ? "border bg-red-500  hover:bg-red-500 shadow-2xl shadow-slate-500  sm:px-4 xl:px-12 rounded-3xl border-navyblue text-white text-base font-semibold tracking-wide  flex items-center gap-4 py-2"
-                    : "border  hover:bg-red-500 shadow-2xl shadow-slate-500  sm:px-4 xl:px-12 rounded-3xl border-navyblue text-white text-base font-semibold tracking-wide  flex items-center gap-4 py-2"
-                }
-              >
-                <h1>Biography</h1>
-                <hr className="w-8 border"></hr>
-                <label>01</label>
-              </motion.button>
-              <button
-                onClick={() => setSelectedTab(2)}
-                className={
-                  selectedTab === 2
-                    ? "border bg-red-500  hover:bg-red-500 shadow-2xl shadow-slate-500  sm:px-4 xl:px-12 rounded-3xl border-navyblue text-white text-base font-semibold tracking-wide  flex items-center gap-4 py-2"
-                    : "border  hover:bg-red-500 shadow-2xl shadow-slate-500  sm:px-4 xl:px-12 rounded-3xl border-navyblue text-white text-base font-semibold tracking-wide  flex items-center gap-4 py-2"
-                }
-              >
-                <h1>Skills</h1>
-                <hr className="w-8 border"></hr>
-                <label>02</label>
-              </button>
-              <button
-                onClick={() => setSelectedTab(3)}
-                className={
-                  selectedTab === 3
-                    ? "border bg-red-500  hover:bg-red-500 shadow-2xl shadow-slate-500  sm:px-4 xl:px-12 rounded-3xl border-navyblue text-white text-base font-semibold tracking-wide  flex items-center gap-4 py-2"
-                    : "border  hover:bg-red-500 shadow-2xl shadow-slate-500  sm:px-4 xl:px-12 rounded-3xl border-navyblue text-white text-base font-semibold tracking-wide  flex items-center gap-4 py-2"
-                }
-              >
-                <h1>Education</h1>
-                <hr className="w-8 border"></hr>
-                <label>03</label>
-              </button>
             </div>
           </div>
         </div>

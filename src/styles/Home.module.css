@@ -17,12 +17,21 @@
   height: 30px;
   width: 35rem;
 }
-
+@media only screen and (max-width: 760px) {
+  .progress {
+    width: 20rem;
+  }
+}
+/* @media only screen and (max-width: 600px) {
+  .progress {
+    width: 22;
+  }
+} */
 .progress-done {
-  background: linear-gradient(to left, #8b9226, #77aedb);
-  box-shadow: 0 3px 3px -5px #87b2e4, 0 2px 5px #87b2e4;
+  background: linear-gradient(to left, #f3452e, #00dddd);
+  box-shadow: 0 3px 3px -5px #87b2e4, 0 2px 5px #25dd00;
   border-radius: 20px;
-  color: #040313;
+  color: #f4f4f4;
   font-weight: 800;
   display: flex;
   align-items: center;
