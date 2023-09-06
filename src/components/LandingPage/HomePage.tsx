@@ -16,16 +16,8 @@ import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import { motion } from "framer-motion";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll/modules";
-
+import { Link, animateScroll as scroll } from "react-scroll";
+import Linkt from "next/link";
 import Skills from "../About";
 // @ts-ignore
 import usePathname from "next/navigation";
@@ -79,9 +71,19 @@ const HomePage = () => {
               </Link>
             </li>
 
-            <li className="flex items-center gap-2">
-              <Image src={gearslogo} alt="projects" />
-              <p>Projects</p>
+            <li className="flex items-center gap-2 cursor-pointer">
+              <Link
+                activeClass="active"
+                to="experience"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                className="flex items-center gap-0.5"
+              >
+                <Image src={gearslogo} alt="projects" />
+                <span>Experience</span>
+              </Link>
             </li>
             <li>Contact me</li>
           </ul>
@@ -159,24 +161,24 @@ const HomePage = () => {
             />
           </div>
           <div className="absolute top-0 bottom-0 right-1 flex flex-col items-center justify-center gap-4">
-            <Link href={`https://www.linkedin.com/notifications/`}>
+            <Linkt href={`https://www.linkedin.com/notifications/`}>
               <BsFacebook
                 fontSize={30}
                 className="cursor-pointer text-navyblue"
               />
-            </Link>
-            <Link href={`https://github.com/Reshmapoudel`}>
+            </Linkt>
+            <Linkt href={`https://github.com/Reshmapoudel`}>
               <AiFillGithub
                 fontSize={30}
                 className="cursor-pointer text-navyblue"
               />
-            </Link>
-            <Link href={`https://www.linkedin.com/notifications/`}>
+            </Linkt>
+            <Linkt href={`https://www.linkedin.com/notifications/`}>
               <AiFillLinkedin
                 fontSize={30}
                 className="cursor-pointer text-navyblue"
               />
-            </Link>
+            </Linkt>
           </div>
         </div>
         <About />

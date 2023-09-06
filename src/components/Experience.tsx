@@ -2,7 +2,10 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <div className="bg-gradient-to-t from-yellow-50 to-blue-150 px-8 md:px-12 lg:px-24 xl:px-28">
+    <div
+      id="experience"
+      className="bg-gradient-to-t from-yellow-50 to-blue-150 px-8 md:px-12 lg:px-24 xl:px-28"
+    >
       <h1 className="text-red-500 text-2xl font-semibold pt-4 sm:py-16 sm:text-3xl md:text-5xl text-center">
         Experience(){" "}
       </h1>{" "}
@@ -17,8 +20,8 @@ const Experience = () => {
             <p className="py-2  text-justify tracking-normal text-xs text-navyblue sm:text-sm md:text-md">
               Proficiently mastered the Vue.js framework along with the
               cutting-edge Nuxt 3. Demonstrated expertise by crafting responsive
-              web pages for Bookmundi's home and search sections, employing Vue
-              3 and Nuxt 3 for an optimized user experience.
+              web pages for Bookmundi home and search sections, employing Vue 3
+              and Nuxt 3 for an optimized user experience.
             </p>
           </div>
         </div>
