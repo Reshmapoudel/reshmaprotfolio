@@ -17,19 +17,35 @@
   height: 30px;
   width: 35rem;
 }
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 540px) {
+  .progress {
+    width: 12rem;
+  }
+}
+@media only screen and (min-width: 540px) {
+  .progress {
+    width: 15rem;
+  }
+}
+@media only screen and (min-width: 600px) {
   .progress {
     width: 20rem;
   }
 }
-/* @media only screen and (max-width: 600px) {
+@media only screen and (min-width: 900px) {
   .progress {
-    width: 22;
+    width: 25rem;
   }
-} */
+}
+@media only screen and (min-width: 1160px) {
+  .progress {
+    width: 35rem;
+  }
+}
+
 .progress-done {
-  background: linear-gradient(to left, #f3452e, #00dddd);
-  box-shadow: 0 3px 3px -5px #87b2e4, 0 2px 5px #25dd00;
+  background: linear-gradient(to left, #f3452e, #343d68ad);
+  box-shadow: 0 3px 3px -5px #87b2e4, 0 2px 5px #2a5123;
   border-radius: 20px;
   color: #f4f4f4;
   font-weight: 800;

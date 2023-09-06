@@ -16,11 +16,21 @@ import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import { motion } from "framer-motion";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
-import Link from "next/link";
+import {
+  Link,
+  Button,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll/modules";
+
 import Skills from "../About";
 // @ts-ignore
 import usePathname from "next/navigation";
 import About from "../About";
+import Experience from "../Experience";
 ("use client");
 const HomePage = () => {
   // const { animatedText } = useTypewriter({
@@ -46,31 +56,42 @@ const HomePage = () => {
   return (
     <div className="w-full">
       {/* nabar */}
-      <div className="flex items-start sm:items-center w-full justify-between px-8 sm:px-24 py-4">
-        <div className=" ">
-          <Image src={logo} alt="logo" className="w-12 sm:w-24" />
-          <h1 className="font-extrabold text-[8px] sm:text-[10px] leading-5 tracking-wider opacity-40 text-blue-400">
-            Reshma Poudel
-          </h1>
-        </div>
-        <div></div>
-        <ul className="hidden sm:flex items-center gap-8 md:gap-12 lg:gap-16 xl:gap-24 text-lg font-normal ">
-          <li>
-            <Link href={``}>Skills</Link>
-          </li>
+      <header>
+        <nav className="flex items-start sm:items-center w-full justify-between px-8 sm:px-24 py-4 ">
+          <div className=" ">
+            <Image src={logo} alt="logo" className="w-12 sm:w-24" />
+            <h1 className="font-extrabold text-[8px] sm:text-[10px] leading-5 tracking-wider opacity-40 text-blue-400">
+              Reshma Poudel
+            </h1>
+          </div>
+          <div></div>
+          <ul className="hidden sm:flex items-center gap-8 md:gap-12 lg:gap-16 xl:gap-24 text-lg font-normal ">
+            <li className="cursor-pointer">
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
+                About
+              </Link>
+            </li>
 
-          <li className="flex items-center gap-2">
-            <Image src={gearslogo} alt="projects" />
-            <p>Projects</p>
-          </li>
-          <li>Contact me</li>
-        </ul>
-        <div className="text-red-600 block sm:hidden">
-          <MenuIcon fontSize="large" />
-        </div>
-      </div>
-      <hr className="bg-yellow-200"></hr>
-      <div className="bg-gradient-to-t from-blue-100 to-yellow-50 w-full ">
+            <li className="flex items-center gap-2">
+              <Image src={gearslogo} alt="projects" />
+              <p>Projects</p>
+            </li>
+            <li>Contact me</li>
+          </ul>
+          <div className="text-red-600 block sm:hidden">
+            <MenuIcon fontSize="large" />
+          </div>
+        </nav>
+      </header>
+      <hr className="border-yellow-100"></hr>
+      <div className="bg-gradient-to-t from-blue-100 to-yellow-50 w-full shadow-2xl">
         <div className="relative flex flex-col sm:flex-row sm:justify-between sm:items-center  w-full  px-8 md:px-12 lg:px-24 xl:px-28">
           <div className="my-6 sm:w-1/2 flex flex-col w-full items-center sm:items-start gap-12 justify-center py-20 md:max-w-4xl capitalize">
             <div className="font-semibold text-navyblue leading-10 ">
@@ -159,6 +180,7 @@ const HomePage = () => {
           </div>
         </div>
         <About />
+        <Experience />
       </div>
     </div>
   );
