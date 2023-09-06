@@ -14,16 +14,16 @@ const About = () => {
         About Me &#10024;
       </h1>
       {/* <hr className="w-24 border-2 bg-red-700" /> */}
-      <div className="sm:px-4">
+      <div className="sm:px-4 pt-8 sm:pt-14">
         <div className="flex flex-col-reverse sm:flex-row w-full items-center px-8 xl:px-16 2xl:px-24">
           <div className="sm:w-1/2">
             <Image src={preview} alt="girl with computer" />
           </div>
 
           <div className="sm:w-1/2 w-full flex flex-col text-center gap-6 sm:text-start ">
-            <h1 className="text-navyblue text-xl tracking-wide font-medium sm:text-2xl md:text-3xl md:pb-8 ">
+            {/* <h1 className="text-navyblue text-xl tracking-wide font-medium sm:text-2xl md:text-3xl md:pb-8 ">
               Hello, My name is Reshma Poudel
-            </h1>
+            </h1> */}
             <p className="text-justify tracking-normal text-base text-navyblue sm:text-lg md:text-xl">
               I have a passion for creating visually appealing and functional
               web applications,i am dedicated to delivering high-quality work

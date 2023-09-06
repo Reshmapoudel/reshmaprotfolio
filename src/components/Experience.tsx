@@ -10,7 +10,7 @@ const Experience = () => {
         Experience( ){" "}
       </h1>{" "}
       <div className="flex flex-col sm:flex-row justify-evenly">
-        <div className="pt-14 w-full sm:w-1/2 text-navyblue">
+        <div className="pt-8 sm:pt-14 w-full sm:w-1/2 text-navyblue">
           <div className="text-navyblue  text-base font-extralight flex items-center gap-2">
             <div className="w-10 border border-navyblue block sm:hidden" />
             <i className="font-thin text-sm ">2022-06 to</i> to current

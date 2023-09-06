@@ -96,7 +96,7 @@ const HomePage = () => {
       <div className="bg-gradient-to-t from-blue-100 to-yellow-50 w-full shadow-2xl">
         <div className="relative flex flex-col sm:flex-row sm:justify-between sm:items-center  w-full  px-8 md:px-12 lg:px-24 xl:px-28">
           <div className="my-6 sm:w-1/2 flex flex-col w-full items-center sm:items-start gap-12 justify-center py-20 md:max-w-4xl capitalize">
-            <div className="font-semibold text-navyblue leading-10 ">
+            <div className="font-semibold text-navyblue leading-10 text-center sm:text-start">
               <div className="text-5xl sm:text-4xl lg:text-5xl xl:text-6xl">
                 hi 👋,I’m Reshma{" "}
               </div>
@@ -116,11 +116,7 @@ const HomePage = () => {
                 />
               </div>
             </div>
-            {/* <p className="text-lg text-gray-700 ">
-              I’m <label className="font-bold">Reshma Poudel</label>, a
-              developer dedicated to making the world a better place one line of
-              code at a time.
-            </p> */}
+
             <motion.button
               whileHover={{ scale: 1.2 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
