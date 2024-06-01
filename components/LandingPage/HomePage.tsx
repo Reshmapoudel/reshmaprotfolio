@@ -21,6 +21,7 @@ import Linkt from "next/link";
 import About from "../About";
 import Experience from "../Experience";
 import Contact from "../Contact";
+import Projects from "../Projects";
 const HomePage = () => {
   // const { animatedText } = useTypewriter({
   //   words: ["Front-End Developer", "UX Designer", "Content Writer"],
@@ -85,7 +86,7 @@ const HomePage = () => {
             <li className="cursor-pointer">
               <Link
                 activeClass="active"
-                to="about"
+                to="projects"
                 spy={true}
                 smooth={true}
                 offset={0}
@@ -94,7 +95,18 @@ const HomePage = () => {
                 Projects
               </Link>
             </li>
-            <li>Contact me</li>
+            <li className="cursor-pointer">
+              <Link
+                activeClass="active"
+                to="contactMe"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
+                Contact me
+              </Link>
+            </li>
           </ul>
           <div className="text-red-600 block sm:hidden">
             <MenuIcon fontSize="large" />
@@ -188,6 +200,7 @@ const HomePage = () => {
         </div>
         <About />
         <Experience />
+        <Projects />
         <Contact />
       </div>
     </div>
