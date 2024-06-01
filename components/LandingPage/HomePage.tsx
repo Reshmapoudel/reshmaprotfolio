@@ -1,29 +1,26 @@
+"use client";
+
 import React from "react";
-import logo from "../../../public/assets/RP..svg";
-import gearslogo from "../../../public/assets/gears-svgrepo-com 1.svg";
+import logo from "../../public/assets/RP..svg";
+import gearslogo from "../../public/assets/gears-svgrepo-com 1.svg";
 import Image from "next/image";
 import MenuIcon from "@mui/icons-material/Menu";
-import profile from "../../../public/assets/re.svg";
-import profile2 from "../../../public/assets/20230306_160012.png";
-import zig from "../../../public/assets/zigzags.svg";
-import plus from "../../../public/assets/plus.svg";
-import cube from "../../../public/assets/cube.svg";
-import circles from "../../../public/assets/circles.svg";
-import ellipse from "../../../public/assets/Ellipse 11.svg";
-import rectangle from "../../../public/assets/rectangle.svg";
+import profile2 from "../../public/assets/20230306_160012.png";
+import zig from "../../public/assets/zigzags.svg";
+import plus from "../../public/assets/plus.svg";
+import cube from "../../public/assets/cube.svg";
+import ellipse from "../../public/assets/Ellipse 11.svg";
+import rectangle from "../../public/assets/rectangle.svg";
 import { useTypewriter, Cursor, Typewriter } from "react-simple-typewriter";
-import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import { motion } from "framer-motion";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { Link, animateScroll as scroll } from "react-scroll";
 import Linkt from "next/link";
-import Skills from "../About";
 // @ts-ignore
-import usePathname from "next/navigation";
 import About from "../About";
 import Experience from "../Experience";
-("use client");
+import Contact from "../Contact";
 const HomePage = () => {
   // const { animatedText } = useTypewriter({
   //   words: ["Front-End Developer", "UX Designer", "Content Writer"],
@@ -83,6 +80,18 @@ const HomePage = () => {
               >
                 <Image src={gearslogo} alt="projects" />
                 <span>Experience</span>
+              </Link>
+            </li>
+            <li className="cursor-pointer">
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
+                Projects
               </Link>
             </li>
             <li>Contact me</li>
@@ -179,6 +188,7 @@ const HomePage = () => {
         </div>
         <About />
         <Experience />
+        <Contact />
       </div>
     </div>
   );

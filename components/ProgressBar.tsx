@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import styles from "../styles/Home.module.css";
+import styles from "../src/styles/Home.module.css";
 import ClassNames from "classnames";
 interface props {
   done: any;

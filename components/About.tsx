@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import preview from "../../public/assets/preview.png";
+import preview from "../public/assets/preview.png";
 import ProgressBar from "./ProgressBar";
 const About = () => {
   const [selectedTab, setSelectedTab] = useState(1);
