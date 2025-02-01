@@ -44,7 +44,7 @@ const Contact = () => {
         Contact
       </h1>
       <div className="flex">
-        <div className="w-1/2">kmk</div>
+        <div className="w-1/2">j</div>
         <div className="w-1/2">
           <form
             onSubmit={handleSubmit}

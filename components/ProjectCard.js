@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import ecomweb from "../public/assets/imgasset/ecomadmin.png";
-import { Link } from "@mui/material";
+  import { Link } from "@mui/material";
 
 const ProjectCard = ({ imgUrl, title, description, linkUrl }) => {
   return (

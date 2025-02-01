@@ -1,12 +1,12 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import finalres from "../public/assets/finalres.png";
-import ecomweb from "../public/assets/imgasset/ecomweb.png";
-import netflix from "../public/assets/netflix.png";
-import pikachu from "../public/assets/imgasset/pikachu.png";
+import ecomweb from "../public/assets/imgasset/location.png";
+import netflix from "../public/assets/imgasset/location.png";
+import pikachu from "../public/assets/imgasset/location.png";
 import location from "../public/assets/imgasset/location.png";
-import airbnb from "../public/assets/imgasset/airbnb.png";
-import ecomadmin from "../public/assets/imgasset/ecomadmin.png";
+import airbnb from "../public/assets/imgasset/location.png";
+import ecomadmin from "../public/assets/imgasset/location.png";
 
 const projectData = [
   {
