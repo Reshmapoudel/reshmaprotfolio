@@ -40,14 +40,14 @@ const Contact = () => {
   return (
     <div
       id="contactMe"
-      className=" bg-gradient-to-t from-blue-100 to-yellow-50 w-full shadow-2xl  px-8 md:px-12 lg:px-24 xl:px-28 "
+      className="bg-gradient-to-t from-blue-100 to-yellow-50 w-full shadow-2xl px-4 sm:px-8 md:px-12 lg:px-24 xl:px-28"
     >
       <h1 className="text-red-500 text-2xl font-semibold pt-4 sm:py-16 sm:text-3xl md:text-5xl text-center">
         Contact
       </h1>
-      <div className="flex">
-        <div className="w-1/2 p-6 flex flex-col justify-center items-center ">
-          <div className="max-w-md text-center">
+      <div className="flex flex-col md:flex-row gap-8">
+        <div className="w-full md:w-1/2 p-4 md:p-6 flex flex-col justify-center items-center">
+          <div className="max-w-md text-center w-full">
             <div className="mb-6">
               {/* Animated Code Symbol */}
               <div className="animate-bounce mb-4">
@@ -91,7 +91,7 @@ const Contact = () => {
             </p>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="w-full md:w-1/2 px-4 md:px-0">
           <div className="bg-slate-100 flex flex-col">
             {error &&
               error.length > 0 &&
@@ -106,10 +106,7 @@ const Contact = () => {
               Thank you for your message!
             </div>
           ) : (
-            <form
-              onSubmit={handleSubmit}
-              className="py-4 mt-4 border-t flex flex-col gap-5"
-            >
+            <form className="py-4 mt-4 border-t flex flex-col gap-5 max-w-md mx-auto">
               <div>
                 <label htmlFor="fullname">Full Name</label>
                 <input
@@ -143,12 +140,14 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <button
-                className="bg-green-700 p-3 text-white font-bold w-full"
-                type="submit"
-              >
-                Send
-              </button>
+              <div className="text-center">
+                <button
+                  className="bg-green-700 px-8 py-3 text-white font-bold rounded hover:bg-green-800 transition-colors"
+                  type="submit"
+                >
+                  Send
+                </button>
+              </div>
             </form>
           )}
         </div>

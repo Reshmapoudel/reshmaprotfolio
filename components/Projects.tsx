@@ -82,12 +82,12 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="bg-gradient-to-t from-yellow-50 to-blue-150 px-8 md:px-12 lg:px-24 xl:px-28"
+      className="bg-gradient-to-t from-yellow-50 to-blue-150 px-4 sm:px-8 md:px-12 lg:px-24 xl:px-28"
     >
       <h1 className="text-red-500 text-2xl font-semibold pt-4 sm:py-16 sm:text-3xl md:text-5xl text-center">
         Projects
-      </h1>{" "}
-      <div className="grid grid-cols-3 gap-10">
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-10 pb-8">
         {projectData.map((project) => (
           <ProjectCard
             key={project.id}
