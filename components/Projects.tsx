@@ -12,6 +12,7 @@ import reshmaTravel from "../public/assets/project/travelreshma.png";
 import virohanallc from "../public/assets/project/virohana llc.png";
 import prabhudulabs from "../public/assets/project/prabhidilabs.png";
 import ecommercefront from "../public/assets/project/ecommercefront.png";
+import virohanareact from "../public/assets/project/virohanareactproject.png";
 
 const projectData = [
   {
@@ -55,6 +56,13 @@ const projectData = [
     description: "ecommerce",
     image: ecommercefront,
     url: "https://ecommercewebapp-one.vercel.app",
+  },
+  {
+    id: 176,
+    title: "virohana LLC react Project",
+    description: "ecommerce",
+    image: virohanareact,
+    url: "https://firebrick-woodpecker-418705.hostingersite.com",
   },
   // {
   //   id: 1,
