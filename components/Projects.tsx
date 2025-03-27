@@ -13,7 +13,7 @@ import virohanallc from "../public/assets/project/virohana llc.png";
 import prabhudulabs from "../public/assets/project/prabhidilabs.png";
 import ecommercefront from "../public/assets/project/ecommercefront.png";
 import virohanareact from "../public/assets/project/virohanareactproject.png";
-
+import vtech from "../public/assets/project/vtech.png";
 const projectData = [
   {
     id: 133,
@@ -49,6 +49,13 @@ const projectData = [
     description: "ecommerce",
     image: pkproject,
     url: "https://ecommerceadmin-gules.vercel.app/categories",
+  },
+  {
+    id: 1,
+    title: "Vtech",
+    description: "Software Develpoment Company",
+    image: vtech,
+    url: "https://tech.virohana.com",
   },
   {
     id: 1,
